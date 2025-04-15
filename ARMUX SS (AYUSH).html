@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARMUX SS - Official</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>⚡ ARMUX SS ⚡</h1>
+        <p>The Ultimate Hacker-Themed Tool for Termux</p>
+    </header>
+
+    <section id="about">
+        <h2>About ARMUX SS</h2>
+        <p>ARMUX SS is a powerful Termux tool that allows users to apply a hacker-style theme with advanced customization options.</p>
+    </section>
+
+    <section id="features">
+        <h2>🔥 Features</h2>
+        <ul>
+            <li>⚡ Dynamic UI with animations</li>
+            <li>🛠 No root required</li>
+            <li>🎨 Fully customizable hacker theme</li>
+            <li>🚀 Fast & lightweight</li>
+        </ul>
+    </section>
+
+    <section id="download">
+        <h2>📥 Download</h2>
+       <a href="http://your-server-ip:5000/download" class="download-btn">
+    Download ARMUX SS
+</a>    </section>
+
+    <footer>
+        <p>Created by <b>Ayush Rajbhar</b> | ARMUX SS © 2025</p>
+    </footer>
+</body>
+</html>
+<style>/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    color: #00ff00;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px #00ff00;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px #00ff00;
+}
+
+/* Features List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.2em;
+    padding: 10px;
+    border-bottom: 1px solid #00ff00;
+}
+
+/* Download Button */
+.download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 10px;
+    font-size: 1.2em;
+    background: #00ff00;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ff00;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #00cc00;
+    box-shadow: 0 0 20px #00cc00;
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    font-size: 1em;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px #00ff00;
+}</style>
+<script>// Typing Effect for Header Text
+const headerText = document.querySelector("header p");
+const text = "The Ultimate Hacker-Themed Tool for Termux";
+let index = 0;
+
+function typeEffect() {
+    if (index < text.length) {
+        headerText.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 100); // Speed of typing
+    }
+}
+
+window.onload = function() {
+    headerText.innerHTML = ""; // Clear text
+    typeEffect();
+};
+
+// Smooth Scroll for Section Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Hacker-Style Text Glitch Effect
+function glitchEffect() {
+    const elements = document.querySelectorAll("h1, h2, .download-btn");
+    elements.forEach(element => {
+        setInterval(() => {
+            element.style.textShadow = (Math.random() > 0.5) 
+                ? "2px 2px 5px red, -2px -2px 5px blue" 
+                : "2px -2px 5px green, -2px 2px 5px yellow";
+        }, 500);
+    });
+}
+
+glitchEffect();</script>
